@@ -1,0 +1,271 @@
+/**
+ * 开店星公众版
+ * @description 基于Yii2+Vue2.0+uniapp研发，H5+小程序+公众号全渠道覆盖，功能完善开箱即用，框架成熟易扩展二开
+ * @author 青岛开店星信息技术有限公司
+ * @link https://www.kaidianxing.com
+ * @copyright Copyright (c) 2020-2022 Qingdao ShopStar Information Technology Co., Ltd.
+ * @copyright 版权归青岛开店星信息技术有限公司所有
+ * @warning Unauthorized deletion of copyright information is prohibited.
+ * @warning 未经许可禁止私自删除版权信息.
+ */ 
+.layout {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 1200px;
+}
+
+.ivu-layout {
+  background: #F3F5F7;
+  height: 100%;
+}
+
+.ivu-layout-header {
+  line-height: inherit;
+}
+
+.ivu-layout-header.header {
+  height: 144px;
+  padding: 0;
+  display: flex;
+  user-select: none;
+  background-color: $pageBg-color;
+}
+
+.ivu-layout-footer.footer {
+  background-color: $footer-color;
+  height: 207px;
+  padding: 0;
+  display: flex;
+  user-select: none;
+}
+
+.ivu-input-search {
+  background: $theme-BgColor !important;
+  border-color: $theme-BgColor !important;
+}
+
+.ivu-input-with-search:hover .ivu-input {
+  border-color: $theme-BgColor !important;
+
+}
+
+.ivu-input-search:hover {
+  background: $theme-BgColor !important;
+  border-color: $theme-BgColor !important;
+}
+.ivu-input:hover{
+  border-color: $theme-BgColor !important;
+}
+.ivu-input:focus{
+  border-color: $theme-BgColor !important;
+  box-shadow: none;
+}
+a:hover{
+  color: $theme-color!important;
+}
+.ivu-input-number:hover{
+  border-color: $theme-BgColor !important;
+}
+.ivu-input-number-controls-outside-btn:hover i{
+  color: $theme-color!important;
+  box-shadow: none;
+
+}
+.ivu-input-number:focus{
+  border-color: $theme-BgColor !important;
+  box-shadow: none;
+}
+//
+//.layout-logo {
+//  width: 200px;
+//  background: rgba(0, 0, 0, 0.1);
+//  text-align: center;
+//  color: #fff;
+//  font-size: 16px;
+//  cursor: default;
+//}
+//
+//.ivu-menu.top-menu {
+//  flex: 1;
+//  padding-left: 20px;
+//  height: 54px;
+//  line-height: 54px;
+//}
+//
+//.ivu-menu.top-menu.ivu-menu-primary {
+//  background: $primary-color;
+//}
+//
+//.ivu-menu.top-menu .ivu-menu-item {
+//  padding: 0 24px;
+//}
+//
+//.ivu-menu.top-menu .ivu-menu-item-active {
+//  background: rgba(211, 211, 211, 0.2);
+//}
+//
+//.ivu-dropdown.top-right-menu {
+//  padding: 0 24px;
+//}
+//
+//.ivu-dropdown.top-right-menu .ivu-dropdown-rel a {
+//  color: #ffffff;
+//}
+//
+//.ivu-layout-sider.left-side {
+//  background: #fff;
+//  height: 100%;
+//}
+//
+//.ivu-layout-sider.left-side .ivu-menu-item {
+//  padding: 0;
+//}
+//
+//.ivu-layout-sider.left-side a {
+//  color: #888;
+//  padding: 14px 24px;
+//  display: block;
+//}
+//
+//.ivu-layout-sider.left-side .ivu-menu {
+//  height: 100%;
+//}
+//
+//.ivu-layout-sider.left-side .ivu-menu-item-selected a {
+//  color: $primary-color;
+//}
+//
+.ivu-layout.container {
+  min-height: calc(100vh - 351px);
+}
+.ivu-btn:hover{
+  color: $theme-color;
+  background-color: #fff;
+  border-color: $theme-color;
+}
+.ivu-btn-error{
+  background-color: $theme-BgColor;
+  border-color: $theme-color;
+  &.ivu-btn:hover{
+    border-color: $theme-color;
+  }
+}
+.ivu-btn:focus{
+  box-shadow:none;
+}
+.ivu-btn-primary{
+  background-color: $theme-BgColor;
+  border-color: $theme-color;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner{
+  background-color: $theme-BgColor;
+  border-color: $theme-color;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner{
+  border-color: $theme-color!important;
+}
+.ivu-page-item-active {
+  border-color: $theme-color;
+
+  a {
+    color: $theme-color;
+  }
+}
+
+.ivu-page-item:hover {
+  border-color: $theme-color;
+
+  a {
+    color: $theme-color;
+  }
+}
+
+.ivu-page-next:hover, .ivu-page-prev:hover {
+  border-color: $theme-color;
+
+  a {
+    color: $theme-color;
+  }
+}
+//
+//.ivu-layout.content {
+//  flex: 1;
+//  width: 100%;
+//  padding: 0 24px 24px;
+//  overflow-x: hidden;
+//}
+//
+//.ivu-breadcrumb.content-crumb {
+//  margin: 24px 0;
+//  user-select: none;
+//}
+//
+//.ivu-layout-content {
+//  padding: 24px;
+//  min-height: 280px;
+//  background: #fff;
+//}
+//
+//.ivu-btn-primary {
+//  background: $primary-color;
+//  border-color: $primary-color;
+//}
+//
+//.ivu-btn-primary:hover {
+//  background-color: rgba($primary-color, 0.9);
+//  border-color: rgba($primary-color, 0.9);
+//}
+//
+//.ivu-card:hover {
+//  box-shadow: none;
+//  transition: none;
+//}
+//
+//.ivu-card.card-footer-fixed {
+//  text-align: center;
+//  position: fixed;
+//  bottom: 0px;
+//  left: 224px;
+//  right: 24px;
+//  z-index: 999;
+//  border-top: 1px solid #ededed;
+//
+//  .ivu-card-body {
+//    padding: 10px;
+//
+//    .ivu-btn {
+//      margin: 0 5px;
+//    }
+//  }
+//}
+//
+//tr.ivu-table-row-hover td {
+//  background: rgba($primary-color, 0.1);
+//}
+//
+//.ivu-table-tip table td {
+//  line-height: 140px;
+//  font-size: 18px;
+//  border-bottom: 0;
+//}
+//
+//.ivu-table:before {
+//  display: none;
+//}
+//
+//.ivu-table-footer {
+//  height: auto;
+//}
+//
+//.ivu-alert-info {
+//  color: $primary-color;
+//}
+//
+//.ivu-tabs-bar {
+//  margin-bottom: 26px;
+//}
+//
+//.ivu-checkbox-border {
+//  margin-bottom: 10px;
+//}

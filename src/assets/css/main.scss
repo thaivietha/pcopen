@@ -1,0 +1,277 @@
+/**
+ * 开店星公众版
+ * @description 基于Yii2+Vue2.0+uniapp研发，H5+小程序+公众号全渠道覆盖，功能完善开箱即用，框架成熟易扩展二开
+ * @author 青岛开店星信息技术有限公司
+ * @link https://www.kaidianxing.com
+ * @copyright Copyright (c) 2020-2022 Qingdao ShopStar Information Technology Co., Ltd.
+ * @copyright 版权归青岛开店星信息技术有限公司所有
+ * @warning Unauthorized deletion of copyright information is prohibited.
+ * @warning 未经许可禁止私自删除版权信息.
+ */ 
+html, body, #app {
+  height: 100%;
+  color: #212121;
+}
+img{
+  display: block;
+}
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: #212121;
+}
+i{
+  font-style: normal;
+}
+
+button,
+button:hover,
+button:active {
+  outline: 0;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fbfcff;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: rgba(217, 224, 238, 1);
+  border-radius: 4px;
+}
+
+.text-color-primary {
+  color: $primary-color !important;
+}
+
+.text-color-danger {
+  color: $danger-color !important;
+}
+
+.text-color-success {
+  color: $success-color !important;
+}
+
+.text-color-666 {
+  color: #666 !important;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.display-none {
+  display: none;
+}
+
+$font-size: 12;
+@while ($font-size<40) {
+  .font-#{$font-size} {
+    font-size: $font-size * 1px !important;
+  }
+  .line-height-#{$font-size} {
+    line-height: $font-size * 1px !important;
+  }
+  $font-size: $font-size+1
+}
+
+.width-100-100 {
+  width: 100% !important;
+}
+
+.width-115 {
+  width: 115px !important;
+}
+
+.width-125 {
+  width: 125px !important;
+}
+
+.width-175 {
+  width: 175px !important;
+}
+
+.width-195 {
+  width: 195px !important;
+}
+
+.width-215 {
+  width: 215px !important;
+}
+
+.width-270 {
+  width: 270px !important;
+}
+
+.width-315 {
+  width: 315px !important;
+}
+
+.width-415 {
+  width: 415px !important;
+}
+
+.width-560 {
+  width: 560px !important;
+}
+
+.width-720 {
+  width: 720px !important;
+}
+
+.width-960 {
+  width: 960px !important;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.padding-left-5 {
+  padding-left: 5px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.padding-bottom-80 {
+  padding-bottom: 80px;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.operation-group {
+  .text {
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+.avatar {
+  height: 36px;
+  width: 36px;
+  border: 1px solid #eee;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.line1{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.line3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.line4{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+not supported by any browser */
+}
